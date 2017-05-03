@@ -289,24 +289,28 @@ h3 {
 
 /** footer **/
 footer{
+  margin-top: 15px;
   box-sizing: border-box;
-  background-color: #333447;
+  background-color: #333447 ;
   color: white;
   width: 100%;
-  height: 410px;
+  height: 450px;
   padding: 55px 30px;
-  margin-top: 13px;
 }
 
 #bottom-bottom {
     position: absolute;
-    margin-top: 150px;
+    margin-top: 200px;
     margin-left: 20%;
     width: 50%;
     text-align: center;
 }
 
-.col-footer{
+.log{
+  margin-left: 130px;
+  float: left;
+}
+.partner{
   margin-left: 130px;
   float:left;
 }
@@ -324,7 +328,7 @@ footer{
 }
 
 .text:hover, .title-footer:hover{
-  color: #FF00BF;
+  color: #FF00BF ;
 }
 
 .bottom-img {
@@ -340,6 +344,21 @@ footer{
   height: 2px;
   margin-top: 20px;
   background-color: white;
+}
+
+.icon{
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 80%;
+}
+
+.icons{
+  width: 20px;
+  height: 20px;
+  padding: 8px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-left: 40px;
 }
 
 /* style icons */
