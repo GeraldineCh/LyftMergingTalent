@@ -11,8 +11,8 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <nav id="nav-header">
-    <div>
+  <header>
+    <nav id="nav-header">
       <a href="index.html"><img id="logo" class="logo" src="assets/img/logo-white.png" alt=""></a>
       <div id="menu-right">
           <a href="#" class="menu">Driver</a>
@@ -23,69 +23,74 @@
         </div>
       </div>
     </nav>
-    <header>
-      <video autoplay muted loop class="video-header">
-        <source src="assets/img/hero-video.mp4" type="video/mp4"/>
-      </video>
-      <div class=register>
-        <div class="titleForm">
-            <h1>Turn Miles</h1>
-            <h2>Into Money</h2>
-            <p class="textTitle">Sign up to drive with Lyft.</p>
-        </div>
-        <form action="" id="form">
-          <div class="contentinput">
-            <input class="input-registro" id="phone" type="text" name="phone" title="El número celular debe empezar con 9" pattern="[9]{1}[0-9]{8}">
-            <label class="label" for="phone">Phone Number</label>
-            <img id="errorPhone" class="error" src="assets/img/error.png" alt="">
-          </div>
-          <div id="register" style="display:none">
-            <div class="contentinput">
-              <input class="input-registro" name="nombre" id="name" type="text" title="Debe empezar con mayúscula" pattern="^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$">
-              <label class="label" for="nombre">Name</label>
-              <img id="errorName" class="error" src="assets/img/error.png" alt="">
-            </div>
-            <div class="contentinput">
-              <input class="input-registro" name="correo" id="email" type="email" title="Correo no válido. Ejemplo: name@domain.com" >
-              <label class="label" for="correo">Email</label>
-              <img id="errorEmail" class="error" src="assets/img/error.png" alt="">
-            </div>
-            <div class="contentinput">
-              <input class="input-registro" name="ciudad" id="city" type="text" title="Debe empezar con mayúscula" pattern="^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$">
-              <label class="label" for="ciudad">City</label>
-              <img id="errorCity" class="error" src="assets/img/error.png" alt="">
-            </div>
-          </div>
-          <button type="submit" class="bt-become" id="become">Become a driver</button>
-          <button type="submit" class="sign">Sign up to ride</button>
-        </form>
-        <div class="footerForm">
-          <p>Already applied?<a class="linkForm" href="https://www.lyft.com/drivers/apply/resume">Check the status of your application here.</a></p>
-          <p>Earn money for inviting friends to drive.<a class="linkForm" href="https://www.lyft.com/drive/referrals">Learn more</a></p>
-        </div>
-      </div>
-    </header>
+  </header>
+  <!-- section content-video & register-->
+  <section class="content-video">
+    <video autoplay muted loop class="video-header">
+      <source src="assets/img/hero-video.mp4" type="video/mp4"/>
+         Tu navegador no soporta HTML5 Video
+    </video>
 
-  <section class="informacion">
-    <section class="left">
-      <h2>A RIDE IN MINUTES</h2>
-      <p>Request a ride and you'll be on your way in minutes</p>
-      <p>Request Ride Repeat</p>
-      <h2>SERIOUS ABOUT</h2>
-      <p>From knowing the color of your driver´s car to our 24/7</p>
-      <p>Trust & Safety Team, we got you.</p>
-      <h2>HAPPY DRIVERS.</h2>
-      <h2>HAPPY RIDERS.</h2>
-      <p>Rid ewith us and you´ll see why 9 out of 10 rides end with five</p>
-      <p>star.</p>
-    </section>
-    <section class="right">
-    </section>
+    <div class=register>
+      <div class="titleForm">
+          <h1>Turn Miles</h1>
+          <h2>Into Money</h2>
+          <p class="textTitle">Sign up to drive with Lyft.</p>
+      </div>
+      <form action="" id="form">
+        <div class="contentinput">
+          <input class="input-registro" id="phone" type="text" name="phone" title="El número celular debe empezar con 9" pattern="[9]{1}[0-9]{8}">
+          <label class="label" for="phone">Phone Number</label>
+          <img id="errorPhone" class="error" src="assets/img/error.png" alt="">
+        </div>
+        <div id="register" style="display:none">
+          <div class="contentinput">
+            <input class="input-registro" name="nombre" id="name" type="text" title="Debe empezar con mayúscula" pattern="^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$">
+            <label class="label" for="nombre">Name</label>
+            <img id="errorName" class="error" src="assets/img/error.png" alt="">
+          </div>
+          <div class="contentinput">
+            <input class="input-registro" name="correo" id="email" type="email" title="Correo no válido. Ejemplo: name@domain.com" >
+            <label class="label" for="correo">Email</label>
+            <img id="errorEmail" class="error" src="assets/img/error.png" alt="">
+          </div>
+          <div class="contentinput">
+            <input class="input-registro" name="ciudad" id="city" type="text" title="Debe empezar con mayúscula" pattern="^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$">
+            <label class="label" for="ciudad">City</label>
+            <img id="errorCity" class="error" src="assets/img/error.png" alt="">
+          </div>
+        </div>
+        <button type="submit" class="bt-become" id="become">Become a driver</button>
+        <button type="submit" class="sign">Sign up to ride</button>
+      </form>
+      <div class="footerForm">
+        <p>Already applied?<a class="linkForm" href="https://www.lyft.com/drivers/apply/resume">Check the status of your application here.</a></p>
+        <p>Earn money for inviting friends to drive.<a class="linkForm" href="https://www.lyft.com/drive/referrals">Learn more</a></p>
+      </div>
+    </div>
   </section>
 
+  <!-- Information & image phone-->
+  <section class="information">
+    <article class="info-left">
+      <h2 class="title-white">A RIDE IN MINUTES</h2>
+      <p>Request a ride and you'll be on your way in minutes</p>
+      <p>Request Ride Repeat</p><br>
+      <h2 class="title-white">SERIOUS ABOUT</h2>
+      <p>From knowing the color of your driver´s car to our 24/7</p>
+      <p>Trust & Safety Team, we got you.</p><br>
+      <h2 class="title-white marg-bot0">HAPPY DRIVERS.</h2>
+      <h2 class="title-white marg-top0">HAPPY RIDERS.</h2>
+      <p>Rid ewith us and you´ll see why 9 out of 10 rides end with five</p>
+      <p>star.</p>
+    </article>
+    <div class="img-phone"></div>
+  </section>
+
+  <!-- section information & video-->
   <section class="info-video">
     <div class="info">
-      <p class="watch"><strong>WATCH</strong></p>
+      <p class="text-watch"><strong>WATCH</strong></p>
       <h3>AMPLIFY YOUR RIDE</h3>
       <p class="text-video">Lyft's new emblem, Amp, is the secret to
         smooth pickups. Lighting up dashboards nationwide, the device makes it
@@ -93,10 +98,11 @@
     </div>
     <iframe class="video" src="https://www.youtube.com/embed/fLSmUWOYpKw" frameborder="0" allowfullscreen></iframe>
   </section>
+
   <section class="info-video">
-    <iframe class="video video-left" src="https://www.youtube.com/embed/v8nyGzOLsdw" frameborder="0" allowfullscreen></iframe>
+    <iframe class="video left" src="https://www.youtube.com/embed/v8nyGzOLsdw" frameborder="0" allowfullscreen></iframe>
     <div class="info info-right">
-      <p class="watch"><strong>WATCH</strong></p>
+      <p class="text-watch"><strong>WATCH</strong></p>
       <h3>JUNE</h3>
       <p class="text-video">In an animated short film by Academy
       Award-winner John Kahrs, a lonely widow in historic South Chicago
@@ -106,7 +112,7 @@
 
   <section class="info-video">
     <div class="info">
-      <p class="watch"><strong>WATCH</strong></p>
+      <p class="text-watch"><strong>WATCH</strong></p>
       <h3>A GOOD THING GOING</h3>
       <p class="text-video">Launching on TV and online, "Ride on the Bright Side" shows how lyft
       continues to prioritize happy drivers, short EATS, and safety.</p>
@@ -115,30 +121,28 @@
   </section>
 
   <footer>
-    <div class="texto-footer">
-      <div class="log">
-        <p class="title-footer">LOG IN</p>
-        <p class="text">Help</p>
-        <p class="text">Cities</p>
-        <p class="text">Airports</p>
-      </div>
-      <div class="partner">
-        <p class="title-footer">PARTHERSHIPS</p>
-        <p class="text">Enterprise</p>
-        <p class="text">Embassadors</p>
-        <p class="text">Developers</p>
-      </div>
-      <div class="partner">
-        <p class="title-footer">LEARN</p>
-        <p class="text">Enterprise</p>
-        <p class="text">Embassadors</p>
-        <p class="text">Developers</p>
-      </div>
-      <div class="partner">
-        <img class="bottom-img" src="assets/img/apple-store.svg" alt=""><br><br>
-        <img class="bottom-img" src="assets/img/google-play.png" alt=""><br><br>
-        <img class="bottom-img" src="assets/img/microsoft.png" alt="">
-      </div>
+    <div class="col-footer">
+      <p class="title-footer">LOG IN</p>
+      <p class="text">Help</p>
+      <p class="text">Cities</p>
+      <p class="text">Airports</p>
+    </div>
+    <div class="col-footer">
+      <p class="title-footer">PARTHERSHIPS</p>
+      <p class="text">Enterprise</p>
+      <p class="text">Embassadors</p>
+      <p class="text">Developers</p>
+    </div>
+    <div class="col-footer">
+      <p class="title-footer">LEARN</p>
+      <p class="text">Enterprise</p>
+      <p class="text">Embassadors</p>
+      <p class="text">Developers</p>
+    </div>
+    <div class="col-footer">
+      <img class="bottom-img" src="assets/img/apple-store.svg" alt=""><br><br>
+      <img class="bottom-img" src="assets/img/google-play.png" alt=""><br><br>
+      <img class="bottom-img" src="assets/img/microsoft.png" alt="">
     </div>
     <div id="bottom-bottom">
       <div class="redessociales">

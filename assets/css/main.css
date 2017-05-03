@@ -1,23 +1,48 @@
 *{  font-family: Montserrat,sans-serif;}
 
-body{   margin: 0;}
+body{ margin: 0;}
 
-p{  margin: 7px 0 7px 0;}
+p{  margin: 4px 0 0 0;}
 
-h2{  margin-top: 30px;}
+.title-white{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+
+
+input{
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #728099;
+  margin-bottom: 30px;
+}
+
+input:focus{
+  outline: none;
+}
+
+.color-grey{
+  color: #333447;
+}
+
+.border-grey{
+    border: 1px solid #333447;
+}
+.color-purple{
+  color: #FF00BF;
+  border: 1px solid #FF00BF;
+}
 
 /*Direct style for nav tag*/
 nav{
-  top: 0;
-  left: 0;
   width: 100%;
-  color: #fff;
-  height: 40px;
   z-index: 1000;
   position: fixed;
   padding-top: 20px;
   padding-left: 50px;
-  background: none;
   transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
 }
 
@@ -51,35 +76,23 @@ nav{
   border-radius: 4px;
 }
 
-.color-grey{
-  color: #333447;
-}
 
-.border-grey{
-    border: 1px solid #333447;
-}
-.color-purple{
-  color: #FF00BF;
-  border: 1px solid #FF00BF;
-}
-
-/*header video */
-header{
+/* section content-video & register */
+.content-video{
   position: relative;
   width: 100%;
-  height: auto;
+  height: 618px;
   margin: 0;
 }
 
 .video-header{
   background-size: cover;
   width: 100%;
+  transform: translateY(-10%);
 }
 
-/*header resgistro */
 .register{
   box-sizing: border-box;
-  display: inline-block;
   position: absolute;
   top: 60px;
   right: 0;
@@ -88,7 +101,6 @@ header{
   padding: 50px 68px;
   background-color: white;
   color: #728099;
-  z-index: 100;
 }
 
 div.titleForm{
@@ -96,24 +108,28 @@ div.titleForm{
   text-transform: uppercase;
   margin-bottom: 27px;
 }
+
 h1, h2{
   font-size: 42px;
   margin: 0;
   font-weight: 600;
   line-height: 1.1;
 }
+
 p.textTitle{
   letter-spacing: 2px;
   margin-top: 9px;
   font-weight: 300;
   font-size: 13.5px;
 }
+
 div.footerForm{
   margin-top: 20px;
   letter-spacing: 0.5px;
   font-size: 10px;
   color: #728099;
 }
+
 a.linkForm{
   color: #ff00bf;
   text-decoration: none;
@@ -122,8 +138,9 @@ a.linkForm{
 div.contentinput{
   position: relative;
 }
+
 label.label {
-  color: #bfc7d9; 
+  color: #bfc7d9;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -131,23 +148,14 @@ label.label {
   position: absolute;
   font-weight: 300;
   top: -6px;
-  left: 0; 
+  left: 0;
 }
+
 label.label.active { /*Al dar click de activa la clase active disminuirá el tamaño de la fuente*/
   top: -21px;
   font-size: 10px;
   line-height: 12px;
-  color: #bfc7d9; 
-}
-input{
-  width: 90%;
-  border: 0;
-  border-bottom: 1px solid #728099;
-  margin-bottom: 30px;
-}
-
-input:focus{
-  outline: none;
+  color: #bfc7d9;
 }
 
 .error{
@@ -186,8 +194,8 @@ input:focus{
   font-size: 12px;
 }
 
-/** seccion informacion 1 **/
-.informacion{
+/** section Information & image phone **/
+.information{
   position: relative;
   box-sizing: border-box;
   margin-top: -10px;
@@ -201,13 +209,21 @@ input:focus{
   padding-left: 80px;
 }
 
-.left{
+.info-left{
   width: 50%;
   float: left;
 }
 
-.right{
-  width: 400px;
+.marg-top0{
+  margin-top: 0;
+}
+
+.marg-bot0{
+  margin-bottom: 0;
+}
+
+.img-phone{
+  width: 410px;
   height: 450px;
   float: left;
   background-image: url("../img/phone.png");
@@ -231,13 +247,16 @@ input:focus{
   padding: 30px;
   left: 30px;
 }
+
 h3 {
   margin-top: 0px;
   font-size: 30px;
 }
+
 .text-video {
   line-height: 24px;
 }
+
 .video{
   float:right;
   width: 65%;
@@ -252,7 +271,15 @@ h3 {
 .video-left{
   float: left;
 }
-.watch{
+.right{
+  float:right;
+}
+
+.left{
+  float: left;
+}
+
+.text-watch{
   font-size: 12px;
   letter-spacing: -1px;
   margin: 0px;
@@ -260,13 +287,13 @@ h3 {
 
 /** footer **/
 footer{
-  margin-top: 15px;
   box-sizing: border-box;
   background-color: #333447;
   color: white;
   width: 100%;
   height: 410px;
   padding: 55px 30px;
+  margin-top: 13px;
 }
 
 #bottom-bottom {
@@ -277,11 +304,7 @@ footer{
     text-align: center;
 }
 
-.log{
-  margin-left: 130px;
-  float: left;
-}
-.partner{
+.col-footer{
   margin-left: 130px;
   float:left;
 }
@@ -317,17 +340,24 @@ footer{
   background-color: white;
 }
 
-.icon{
+/* style icons */
+.encajar{
+  width: 20px;
+  height: 20px;
+  font-size: 100%;
+  color: #fff;
+  text-decoration: none;
+}
+
+.redessociales{
   margin: 0 auto;
-  margin-top: 80px;
+  margin-top: 70px;
   width: 80%;
 }
 
-.icons{
-  width: 20px;
-  height: 20px;
-  padding: 8px;
-  border: 1px solid white;
+.redessociales a{
+  border:1px solid #fff;
   border-radius: 50%;
+  padding: 10px;
   margin-left: 40px;
 }
