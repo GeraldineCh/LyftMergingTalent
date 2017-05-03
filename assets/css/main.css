@@ -85,17 +85,60 @@ header{
   right: 0;
   width: 40%;
   height: auto;
-  padding: 40px;
+  padding: 50px 68px;
   background-color: white;
   color: #728099;
   z-index: 100;
 }
 
-.title{
-  color: #352384;
-  white-space: pre-line;
+div.titleForm{
+  color:#352384;
+  text-transform: uppercase;
+  margin-bottom: 27px;
 }
-
+h1, h2{
+  font-size: 42px;
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.1;
+}
+p.textTitle{
+  letter-spacing: 2px;
+  margin-top: 9px;
+  font-weight: 300;
+  font-size: 13.5px;
+}
+div.footerForm{
+  margin-top: 20px;
+  letter-spacing: 0.5px;
+  font-size: 10px;
+  color: #728099;
+}
+a.linkForm{
+  color: #ff00bf;
+  text-decoration: none;
+  background-color: transparent;
+}
+div.contentinput{
+  position: relative;
+}
+label.label {
+  color: #bfc7d9; 
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  position: absolute;
+  font-weight: 300;
+  top: -6px;
+  left: 0; 
+}
+label.label.active { /*Al dar click de activa la clase active disminuirá el tamaño de la fuente*/
+  top: -21px;
+  font-size: 10px;
+  line-height: 12px;
+  color: #bfc7d9; 
+}
 input{
   width: 90%;
   border: 0;
@@ -115,6 +158,9 @@ input:focus{
 }
 
 .bt-become{
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
   background-color: #FF00BF;
   color: white;
   width: 40%;
@@ -122,14 +168,19 @@ input:focus{
   border: 0;
   border-radius: 5px;
 }
-
-.bt-signup{
+ button.sign{
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: 200;
+  text-decoration: underline;
+  color: #728099;
+  line-height: 1.5;
   background-color: white;
   border: 0;
-  text-decoration: underline;
   width: 40%;
-  margin-left: 5%;
+  margin:0;
 }
+
 
 .register-text{
   font-size: 12px;

@@ -1,79 +1,85 @@
 var become = document.getElementById("form");
+
 become.addEventListener("submit", function(event) {
   event.preventDefault();
-  validateForm();
+  var array = document.getElementsByClassName("input-registro");
+  for(i = 0 ; i < array.length; i++){
+    if(! (array[i].value.trim().length != 0)){
+      array[i].nextElementSibling.nextElementSibling.style.display="inline-block";
+      array[i].style.borderBottom="1px solid red";
+    }else{
+      array[i].nextElementSibling.nextElementSibling.style.display="none";
+      array[i].style.borderBottom="1px solid black";
+    }
+  }
 });
 
+var array = document.getElementsByClassName("input-registro");
+for(i = 0 ; i < array.length; i++){
+    array[i].addEventListener("blur", validateForm);
+    array[i].addEventListener("blur", blurInput);
+    array[i].addEventListener("focus", focusInput);
+}
+ 
 function validateForm(){
-  var phone = document.getElementById("phone");
-  var name = document.getElementById("name");
-  var email = document.getElementById("email");
-  var city = document.getElementById("city");
+  var patronTel = /[9]{1}[0-9]{8}/;
+  var patronTexto = /^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/;
+  var patronEmail =/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+(\w{2,4})+$/;
 
-  validatePhone(phone);
-  validateName(name);
-  validateEmail(email);
-  validateCity(city);
+  //-----------------------------------------------------Validación de campos vacios
+  if(this.value.trim().length === 0){
+    this.nextElementSibling.nextElementSibling.style.display="inline-block";
+    this.style.borderBottom="1px solid red";
+  }else{
+    this.nextElementSibling.nextElementSibling.style.display="none";
+    this.style.borderBottom="1px solid black";
   }
 
-function validatePhone(){
-  if(phone.value.length==0 || /^\s+|\s+$/.test(phone.value)){
-    document.getElementById("errorPhone").style.display="inline-block";
-    phone.style.borderBottom="1px solid red";
-    return false;
-  }
-  if(!(/[9]{1}[0-9]{8}/.test(phone.value))){
-    document.getElementById("errorPhone").style.display="inline-block";
-    phone.style.borderBottom="1px solid red";
-    return false;
-  }
-  else {
-      document.getElementById("errorPhone").style.display="none";
-      phone.style.borderBottom="1px solid black";
+  if(this.getAttribute("id")=="phone"){
+    if(!(patronTel.test(this.value.trim()))){
+      this.nextElementSibling.nextElementSibling.style.display="inline-block";
+      this.style.borderBottom="1px solid red";
+    }else{
+      this.nextElementSibling.nextElementSibling.style.display="none";
+      this.style.borderBottom="1px solid black";
     }
+  }
+
+  if(this.getAttribute("id")=="name"){
+    if(!(patronTexto.test(this.value.trim()))){
+      this.nextElementSibling.nextElementSibling.style.display="inline-block";
+      this.style.borderBottom="1px solid red";
+    }else{
+      this.nextElementSibling.nextElementSibling.style.display="none";
+      this.style.borderBottom="1px solid black";
+    } 
+  }
+
+  if(this.getAttribute("id")=="email"){
+    if(!(patronEmail.test(this.value.trim()))){
+      this.nextElementSibling.nextElementSibling.style.display="inline-block";
+      this.style.borderBottom="1px solid red";
+    }else{
+      this.nextElementSibling.nextElementSibling.style.display="none";
+      this.style.borderBottom="1px solid black";
+    }  
+  }
+  if(this.getAttribute("id")=="city"){
+    if(!(patronTexto.test(this.value.trim()))){
+      this.nextElementSibling.nextElementSibling.style.display="inline-block";
+      this.style.borderBottom="1px solid red";
+    }else{
+      this.nextElementSibling.nextElementSibling.style.display="none";
+      this.style.borderBottom="1px solid black";
+    } 
+  }
+
+}
+//-------------------------------------------Efecto Label
+function focusInput() {
+  this.parentElement.children[1].className = "label active";
 }
 
-function validateName(name){
-  /** Validacion para nombre**/
-  if(name.value.length==0 || /^\s+|\s+$/.test(name.value)){
-    document.getElementById("errorName").style.display="inline-block";
-    name.style.borderBottom="1px solid red";
-    return false;
-  }
-  if (/^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/.test(name.value)){
-    document.getElementById("errorName").style.display="none";
-    name.style.borderBottom="1px solid black";
-    }
-}
-
-function validateEmail(email){
-  /** Validacion para nombre**/
-  if(email.value.length==0 || /^\s+|\s+$/.test(email.value)){
-    document.getElementById("errorEmail").style.display="inline-block";
-    email.style.borderBottom="1px solid red";
-    return false;
-  }
-    else if (!(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+(\w{2,4})+$/.test(email.value))){
-    document.getElementById("errorEmail").style.display="inline-block";
-    email.style.borderBottom="1px solid red";
-    return false;
-    }
-  else {
-    document.getElementById("errorEmail").style.display="none";
-    email.style.borderBottom="1px solid black";
-  }
-}
-
-
-function validateCity(city){
-  /** Validacion para nombre**/
-  if(city.value.length==0 || /^\s+|\s+$/.test(city.value)){
-    document.getElementById("errorCity").style.display="inline-block";
-    city.style.borderBottom="1px solid red";
-    return false;
-  }
-  if (/^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/.test(city.value)){
-    document.getElementById("errorCity").style.display="none";
-    city.style.borderBottom="1px solid black";
-    }
+function blurInput(){
+      this.parentElement.children[1].className = "label";
 }
