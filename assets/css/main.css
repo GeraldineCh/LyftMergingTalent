@@ -6,18 +6,36 @@ p{  margin: 7px 0 7px 0;}
 
 h2{  margin-top: 30px;}
 
+input{
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #728099;
+  margin-bottom: 30px;
+}
+
+input:focus{
+  outline: none;
+}
+
+.color-grey{
+  color: #333447;
+}
+
+.border-grey{
+    border: 1px solid #333447;
+}
+.color-purple{
+  color: #FF00BF;
+  border: 1px solid #FF00BF;
+}
+
 /*Direct style for nav tag*/
 nav{
-  top: 0;
-  left: 0;
   width: 100%;
-  color: #fff;
-  height: 40px;
   z-index: 1000;
   position: fixed;
   padding-top: 20px;
   padding-left: 50px;
-  background: none;
   transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
 }
 
@@ -51,35 +69,23 @@ nav{
   border-radius: 4px;
 }
 
-.color-grey{
-  color: #333447;
-}
 
-.border-grey{
-    border: 1px solid #333447;
-}
-.color-purple{
-  color: #FF00BF;
-  border: 1px solid #FF00BF;
-}
-
-/*header video */
-header{
+/* section content-video & register */
+.content-video{
   position: relative;
   width: 100%;
-  height: auto;
+  height: 618px;
   margin: 0;
 }
 
 .video-header{
   background-size: cover;
   width: 100%;
+  transform: translateY(-10%);
 }
 
-/*header resgistro */
 .register{
   box-sizing: border-box;
-  display: inline-block;
   position: absolute;
   top: 60px;
   right: 0;
@@ -88,23 +94,11 @@ header{
   padding: 40px;
   background-color: white;
   color: #728099;
-  z-index: 100;
 }
 
 .title{
   color: #352384;
   white-space: pre-line;
-}
-
-input{
-  width: 90%;
-  border: 0;
-  border-bottom: 1px solid #728099;
-  margin-bottom: 30px;
-}
-
-input:focus{
-  outline: none;
 }
 
 .error{
@@ -135,8 +129,8 @@ input:focus{
   font-size: 12px;
 }
 
-/** seccion informacion 1 **/
-.informacion{
+/** section Information & image phone **/
+.information{
   position: relative;
   box-sizing: border-box;
   margin-top: -10px;
@@ -148,13 +142,21 @@ input:focus{
   padding-left: 80px;
 }
 
-.left{
+.info-left{
   width: 50%;
   float: left;
 }
 
-.right{
-  width: 400px;
+.marg-top0{
+  margin-top: 0;
+}
+
+.marg-bot0{
+  margin-bottom: 0;
+}
+
+.img-phone{
+  width: 410px;
   height: 450px;
   float: left;
   background-image: url("../img/phone.png");
@@ -183,20 +185,20 @@ input:focus{
   height: 500px;
 }
 
-.info-right{
+.right{
   float:right;
 }
 
-.video-left{
+.left{
   float: left;
 }
-.watch{
+
+.text-watch{
   font-size: 12px;
 }
 
 /** footer **/
 footer{
-  margin-top: 15px;
   box-sizing: border-box;
   background-color: #333447;
   color: white;
@@ -213,11 +215,7 @@ footer{
     text-align: center;
 }
 
-.log{
-  margin-left: 130px;
-  float: left;
-}
-.partner{
+.col-footer{
   margin-left: 130px;
   float:left;
 }
@@ -253,17 +251,24 @@ footer{
   background-color: white;
 }
 
-.icon{
-  margin: 0 auto;
-  margin-top: 80px;
+/* style icons */
+.encajar{
+  width: 20px;
+  height: 20px;
+  font-size: 100%;
+  color: #fff;
+  text-decoration: none;
+}
+
+.redessociales{
+  margin: 0 auto; 
+  margin-top: 70px;
   width: 80%;
 }
 
-.icons{
-  width: 20px;
-  height: 20px;
-  padding: 8px;
-  border: 1px solid white;
+.redessociales a{
+  border:1px solid #fff;
   border-radius: 50%;
+  padding: 10px;
   margin-left: 40px;
 }
