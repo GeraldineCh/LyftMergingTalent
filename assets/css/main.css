@@ -171,20 +171,29 @@ input:focus{
 }
 
 .info{
+  position: absolute;
   box-sizing: border-box;
   float: left;
   width: 30%;
-  padding: 40px;
+  padding: 30px;
+  left: 30px;
 }
-
+h3 {
+  margin-top: 0px;
+  font-size: 30px;
+}
+.text-video {
+  line-height: 24px;
+}
 .video{
   float:right;
-  width: 70%;
-  height: 500px;
+  width: 65%;
+  height: 505px;
 }
 
 .info-right{
-  float:right;
+  position: relative;
+  float:left;
 }
 
 .video-left{
@@ -192,6 +201,8 @@ input:focus{
 }
 .watch{
   font-size: 12px;
+  letter-spacing: -1px;
+  margin: 0px;
 }
 
 /** footer **/
