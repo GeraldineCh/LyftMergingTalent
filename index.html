@@ -1,53 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lyft</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/main.css">
-</head>
-<body>
-  <nav id="nav-header">
-    <div>
-      <a href="index.html"><img id="logo" class="logo" src="assets/img/logo-white.png" alt=""></a>
-      <div id="menu-right">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="assets/img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>A ride whenever you need one - Lyft</title>
+  </head>
+  <body>
+    <nav id="nav-header">
+      <div>
+        <a href="index.html"><img id="logo" class="logo" src="assets/img/logo-white.png" alt=""></a>
+        <div id="menu-right">
           <a href="#" class="menu">Driver</a>
           <a href="#" class="menu">Explore</a>
           <a href="#" class="menu">Help</a>
           <a href="#" class="menu border" id="login">Login</a>
           <a href="#" class="menu border" id="signUp" style="visibility:hidden">Sign up</a>
-      </div>
-    </div>
-  </nav>
- <header>
-    <video autoplay muted loop class="video-header">
-      <source src="assets/img/hero-video.mp4" type="video/mp4"/>
-         Tu navegador no soporta HTML5 Video
-    </video>
-    <div class=register>
-      <h1 class="title">TURN MILES
-      INTO MONEY</h1>
-      <h5 class="title">SIGN UP TO DRIVE WITH LYFT</h5>
-      <form action="" id="form">
-        <input id="phone" type="text" name="phone" placeholder="Phone number" title="El número celular debe empezar con 9" pattern="[9]{1}[0-9]{8}">
-        <img id="errorPhone" class="error"src="assets/img/error.png" alt="">
-        <div id="register" style="display:none">
-          <input id="name" type="text" placeholder="Name" title="Debe empezar con mayúscula" pattern="^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$">
-          <img id="errorName" class="error"src="assets/img/error.png" alt="">
-          <input id="email" type="email" placeholder="Email" title="Correo no válido. Ejemplo: name@domain.com" >
-          <img id="errorEmail" class="error"src="assets/img/error.png" alt="">
-          <input id="city" type="text" placeholder="City" title="Debe empezar con mayúscula" pattern="^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$">
-          <img id="errorCity" class="error"src="assets/img/error.png" alt="">
         </div>
-        <input type="submit" class="bt-become" value="Become a driver" id="become">
-        <input type="submit" class="bt-signup" value="Sign up to ride">
-        <p class="register-text">Already apllied? Check the status of your application here.</p>
-        <p class="register-text">Earn money for inviting friends to drive. Lear more</p>
-      </form>
-    </div>
-  </header>
+      </div>
+    </nav>
+    <header>
+      <video autoplay muted loop class="video-header">
+        <source src="assets/img/hero-video.mp4" type="video/mp4"/>
+      </video>
+      <div class=register>
+        <div class="titleForm">
+            <h1>Turn Miles</h1>
+            <h2>Into Money</h2>
+            <p class="textTitle">Sign up to drive with Lyft.</p>
+        </div>
+        <form action="" id="form">
+          <div class="contentinput">
+            <input class="input-registro" id="phone" type="text" name="phone" title="El número celular debe empezar con 9" pattern="[9]{1}[0-9]{8}">
+            <label class="label" for="phone">Phone Number</label>
+            <img id="errorPhone" class="error" src="assets/img/error.png" alt="">
+          </div>
+          <div id="register" style="display:none">
+            <div class="contentinput">
+              <input class="input-registro" name="nombre" id="name" type="text" title="Debe empezar con mayúscula" pattern="^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$">
+              <label class="label" for="nombre">Name</label>
+              <img id="errorName" class="error" src="assets/img/error.png" alt="">
+            </div>
+            <div class="contentinput">
+              <input class="input-registro" name="correo" id="email" type="email" title="Correo no válido. Ejemplo: name@domain.com" >
+              <label class="label" for="correo">Email</label>
+              <img id="errorEmail" class="error" src="assets/img/error.png" alt="">
+            </div>
+            <div class="contentinput">
+              <input class="input-registro" name="ciudad" id="city" type="text" title="Debe empezar con mayúscula" pattern="^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$">
+              <label class="label" for="ciudad">City</label>
+              <img id="errorCity" class="error" src="assets/img/error.png" alt="">
+            </div>
+          </div>
+          <button type="submit" class="bt-become" id="become">Become a driver</button>
+          <button type="submit" class="sign">Sign up to ride</button>
+        </form>
+        <div class="footerForm">
+          <p>Already applied?<a class="linkForm" href="https://www.lyft.com/drivers/apply/resume">Check the status of your application here.</a></p>
+          <p>Earn money for inviting friends to drive.<a class="linkForm" href="https://www.lyft.com/drive/referrals">Learn more</a></p>
+        </div>
+      </div>
+    </header>
 
   <section class="informacion">
     <section class="left">
