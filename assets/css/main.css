@@ -1,0 +1,249 @@
+*{  font-family: Montserrat,sans-serif;}
+
+body{   margin: 0;}
+
+p{  margin: 7px 0 7px 0;}
+
+h2{  margin-top: 30px;}
+
+/*Direct style for nav tag*/
+nav{
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  height: 40px;
+  z-index: 1000;
+  position: fixed;
+  padding-top: 20px;
+  padding-left: 50px;
+  background: none;
+  transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+}
+
+.logo{
+  left:0;
+  margin: 0;
+  width: 50px;
+  height: auto;
+  float: left;
+  background-repeat: no-repeat;
+  background-size: 100px 40px;
+  padding-bottom: 5px;
+}
+
+/** menu right */
+#menu-right{
+    position: relative;
+    float: left;
+    left: 50%;
+}
+
+.menu{
+  text-decoration: none;
+  color: white;
+  margin-left: 30px;
+}
+
+.border{
+  padding: 5px 10px;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+.color-grey{
+  color: #333447;
+}
+
+.border-grey{
+    border: 1px solid #333447;
+}
+.color-purple{
+  color: #FF00BF;
+  border: 1px solid #FF00BF;
+}
+
+/*header video */
+header{
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.video-header{
+  background-size: cover;
+  width: 100%;
+}
+
+/*header resgistro */
+.register{
+  box-sizing: border-box;
+  display: inline-block;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 40%;
+  height: auto;
+  padding: 40px;
+  background-color: white;
+  color: #728099;
+  z-index: 100;
+}
+
+.title{
+  color: #352384;
+  white-space: pre-line;
+}
+
+input{
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #728099;
+  margin-bottom: 30px;
+}
+
+input:focus{
+  outline: none;
+}
+
+.error{
+  position: absolute;
+  width: 20px;
+  display: none;
+  float: right;
+}
+
+.bt-become{
+  background-color: #FF00BF;
+  color: white;
+  width: 40%;
+  padding: 15px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.bt-signup{
+  background-color: white;
+  border: 0;
+  text-decoration: underline;
+  width: 40%;
+  margin-left: 5%;
+}
+
+.register-text{
+  font-size: 12px;
+}
+
+/** seccion informacion 1 **/
+.informacion{
+  position: relative;
+  box-sizing: border-box;
+  margin-top: -10px;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(#76278f, #2b1e66);
+  color: white;
+  padding: 40px;
+  padding-left: 80px;
+}
+
+.left{
+  width: 50%;
+  float: left;
+}
+
+.right{
+  width: 400px;
+  height: 450px;
+  float: left;
+  background-image: url("../img/phone.png");
+  background-size: cover;
+}
+
+/** seccion info-video**/
+.info-video{
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  color: black;
+}
+
+.info{
+  box-sizing: border-box;
+  float: left;
+  width: 30%;
+  padding: 40px;
+}
+
+.video{
+  float:right;
+  width: 70%;
+  height: 500px;
+}
+
+.info-right{
+  float:right;
+}
+
+.video-left{
+  float: left;
+}
+.watch{
+  font-size: 12px;
+}
+
+/** footer **/
+footer{
+  box-sizing: border-box;
+  background-color: #333447;
+  color: white;
+  width: 100%;
+  height: 350px;
+  padding: 20px;
+  text-align: center;
+}
+
+.log{
+  margin-left: 130px;
+  float: left;
+}
+.partner{
+  margin-left: 130px;
+  float:left;
+}
+
+.text{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+.text:hover{
+  color: #FF00BF;
+}
+
+.line{
+  margin: 0 auto;
+  width: 70%;
+  height: 2px;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.icon{
+  margin: 0 auto;
+  margin-top: 70px;
+  width: 80%;
+}
+
+.icons{
+  width: 20px;
+  height: 20px;
+  padding: 8px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-left: 40px;
+}

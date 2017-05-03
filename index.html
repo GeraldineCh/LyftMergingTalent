@@ -1,14 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<title>Create image</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lyft</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-<!--Cuerpo-->
-	</div>
-<!--Script-->
-	<script type="text/javascript" src="js/app.js"></script>
+  <nav id="nav-header">
+    <div>
+      <a href="index.html"><img id="logo" class="logo" src="assets/img/logo-white.png" alt=""></a>
+      <div id="menu-right">
+          <a href="#" class="menu">Driver</a>
+          <a href="#" class="menu">Explore</a>
+          <a href="#" class="menu">Help</a>
+          <a href="#" class="menu border" id="login">Login</a>
+          <a href="#" class="menu border" id="signUp" style="visibility:hidden">Sign up</a>
+      </div>
+    </div>
+  </nav>
+ <header>
+    <video autoplay muted loop class="video-header">
+      <source src="assets/img/hero-video.mp4" type="video/mp4"/>
+         Tu navegador no soporta HTML5 Video
+    </video>
+    <div class=register>
+      <h1 class="title">TURN MILES
+      INTO MONEY</h1>
+      <h5 class="title">SIGN UP TO DRIVE WITH LYFT</h5>
+      <form action="" id="form">
+        <input id="phone" type="text" name="phone" placeholder="Phone number" title="El número celular debe empezar con 9" pattern="[9]{1}[0-9]{8}">
+        <img id="errorPhone" class="error"src="assets/img/error.png" alt="">
+        <div id="register" style="display:none">
+          <input id="name" type="text" placeholder="Name" title="Debe empezar con mayúscula" pattern="^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$">
+          <img id="errorName" class="error"src="assets/img/error.png" alt="">
+          <input id="email" type="email" placeholder="Email" title="Correo no válido. Ejemplo: name@domain.com" >
+          <img id="errorEmail" class="error"src="assets/img/error.png" alt="">
+          <input id="city" type="text" placeholder="City" title="Debe empezar con mayúscula" pattern="^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$">
+          <img id="errorCity" class="error"src="assets/img/error.png" alt="">
+        </div>
+        <input type="submit" class="bt-become" value="Become a driver" id="become">
+        <input type="submit" class="bt-signup" value="Sign up to ride">
+        <p class="register-text">Already apllied? Check the status of your application here.</p>
+        <p class="register-text">Earn money for inviting friends to drive. Lear more</p>
+      </form>
+    </div>
+  </header>
+
+  <section class="informacion">
+    <section class="left">
+      <h2>A RIDE IN MINUTES</h2>
+      <p>Request a ride and you'll be on your way in minutes</p>
+      <p>Request Ride Repeat</p>
+      <h2>SERIOUS ABOUT</h2>
+      <p>From knowing the color of your driver´s car to our 24/7</p>
+      <p>Trust & Safety Team, we got you.</p>
+      <h2>HAPPY DRIVERS.</h2>
+      <h2>HAPPY RIDERS.</h2>
+      <p>Rid ewith us and you´ll see why 9 out of 10 rides end with five</p>
+      <p>star.</p>
+    </section>
+    <section class="right">
+    </section>
+  </section>
+
+  <section class="info-video">
+    <div class="info">
+      <p class="watch"><strong>WATCH</strong></p>
+      <h3>AMPLIFY YOUR RIDE</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, nam? Commodi quaerat odit voluptate, illo, sint quam ducimus asperiores dignissimos alias facilis temporibus repellat corrupti? Atque at nam, reiciendis voluptates.</p>
+    </div>
+    <iframe class="video" src="https://www.youtube.com/embed/fLSmUWOYpKw" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section class="info-video">
+    <iframe class="video video-left" src="https://www.youtube.com/embed/v8nyGzOLsdw" frameborder="0" allowfullscreen></iframe>
+    <div class="info info-right">
+      <p class="watch"><strong>WATCH</strong></p>
+      <h3>JUNE</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, nam? Commodi quaerat odit voluptate, illo, sint quam ducimus asperiores dignissimos alias facilis temporibus repellat corrupti? Atque at nam, reiciendis voluptates.</p>
+    </div>
+  </section>
+
+  <section class="info-video">
+    <div class="info">
+      <p class="watch"><strong>WATCH</strong></p>
+      <h3>A GOOD THING GOING</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, nam? Commodi quaerat odit voluptate, illo, sint quam ducimus asperiores dignissimos alias facilis temporibus repellat corrupti? Atque at nam, reiciendis voluptates.</p>
+    </div>
+    <iframe class="video" src="https://www.youtube.com/embed/xj2VWLV0xCU" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <footer>
+    <div class="log">
+      <p>LOG IN</p>
+      <p class="text">Help</p>
+      <p class="text">Cities</p>
+      <p class="text">Airports</p>
+    </div>
+    <div class="partner">
+      <p>PARTHERSHIPS</p>
+      <p class="text">Enterprise</p>
+      <p class="text">Embassadors</p>
+      <p class="text">Developers</p>
+    </div>
+    <div class="partner">
+      <p>LEARN</p>
+      <p class="text">Enterprise</p>
+      <p class="text">Embassadors</p>
+      <p class="text">Developers</p>
+    </div>
+    <div class="img">
+      <img width="100px" src="assets/img/apple-store.svg" alt=""><br><br>
+      <img width="100px" src="assets/img/google-play.png" alt=""><br><br>
+      <img width="100px" src="assets/img/microsoft.png" alt="">
+    </div>
+    <div class="icon">
+      <img src="assets/img/Facebook.png" alt="" class="icons">
+      <img src="assets/img/Instagram.png" alt="" class="icons">
+      <img src="assets/img/twitter.png" alt="" class="icons">
+    </div>
+    <div class="line"></div><br>
+    <p>&copy Lyft, Inc TermsPrivacy</p>
+  </footer>
+
+  <script src="assets/js/nav-change.js"></script>
+  <script src="assets/js/register.js"></script>
+  <script src="assets/js/validate.js"></script>
 </body>
 </html>
