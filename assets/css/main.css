@@ -200,8 +200,8 @@ footer{
   background-color: #333447;
   color: white;
   width: 100%;
-  height: 350px;
-  padding: 20px;
+  height: 390px;
+  padding: 55px 30px;
   text-align: center;
 }
 
@@ -214,14 +214,19 @@ footer{
   float:left;
 }
 
+.title-footer {
+  cursor: pointer;
+}
+
 .text{
   margin-top: 30px;
   margin-bottom: 30px;
   font-weight: lighter;
   font-size: 12px;
+  cursor: pointer;
 }
 
-.text:hover{
+.text:hover, .title-footer:hover{
   color: #FF00BF;
 }
 
